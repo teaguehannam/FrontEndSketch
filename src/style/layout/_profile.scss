@@ -1,0 +1,83 @@
+.Profile {
+	padding: 6px;
+	width: 100%;
+	max-width: 512px;
+	border-radius: 12px;
+	text-align: center;
+	
+	.DisplayUser {
+		display: flex;
+
+		.Banner {
+			max-width: 500px;
+			max-height: 140px;
+			border-radius: 12px 12px 0px 0px;
+			width: calc(100% - 12px);
+			position: absolute;
+		} // Banner
+
+		.Profile {
+			height: 124px;
+			width: 124px;
+			padding: 0;
+			border-radius: 50%;
+			border: 4px white solid;
+			margin: 64px auto 0px auto;
+			z-index: 1;
+
+		} // Profile
+
+	} // DisplayUser
+
+	.UserInfo {
+
+		h2 {
+			margin: 1rem;
+			line-height: 2rem;
+			color: #3E3F40;
+
+		} // h2 - name
+
+		p {
+			@include subText;
+
+		} //p - location
+
+		h6 {
+			color: white;
+			background-color: #3C68FF;
+			border-radius: 24px;
+			width: 128px;
+			height: 40px;
+			line-height: 40px;
+			margin: 0px auto;
+
+		} // h6 - Level
+
+	} // UserInfo
+
+	.Stats {
+		padding-top: 56px;
+		display: flex;
+		justify-content: space-around;
+
+		.Box {
+			width: 100%;
+
+			p {
+				@include subText;
+
+			} // p
+
+			h5 {
+				color: #5B5C5F;
+				font-size: 1.4rem;
+				margin: 0;
+				line-height: 0.25rem;;
+			}
+
+		} // Box
+
+	} // Stats
+
+} // Profile

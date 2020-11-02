@@ -25,7 +25,7 @@ const Pricing = () => {
 			<div className="Amount">
 				<div className="Display">
 					<p>$</p>
-					<h4>180</h4>
+					<h4>{pricing.price}</h4>
 					<p>/ hour</p>
 				</div>
 				<input	type="range"
