@@ -1,0 +1,30 @@
+
+/// font family
+$text-font-stack: 'Merriweather', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+
+// Text
+$text-color: rgb(19,19,19) !default;
+$brand-color: rgb(229,0,80) !default;
+$white: rgb(255,255,255);
+$slight-grey: rgb(93,92,96);
+$link-color: rgb(246,242,252);
+
+// Borders 
+$dark-opacity: rgba(19,19,19,0);
+$dark-opacity2: rgba(19,19,19,0.2);
+$light-opacity: rgba(252,252,252,0.05);
+$light-opacity2: rgba(252,252,252,0.2);
+$dark: rgba(19,19,19,1);
+
+$max-width: 1140px !default;
+
+$breakpoints: (
+	'xsmall': (max-width: 700px),
+	'small': (max-width: 1030px),
+	'medium': (max-width: 1225px),
+	'large': (max-width: 1900px),
+	'xlarge': (max-width: 2500px)
+) !default;
+
+$base-url: '/assets/' !default;
