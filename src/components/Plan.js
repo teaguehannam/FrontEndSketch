@@ -8,11 +8,13 @@ const Plan = () => {
 	return (
 		<div className="Plan">
 
-			<h2>Upgrade your plan</h2>
-			<p>
-				Please make the payment to start enjoying 
-				all the features of our premium plan as soon as possible.
-			</p>
+			<div className="Title">
+				<h2>Upgrade your plan</h2>
+				<p>
+					Please make the payment to start enjoying 
+					all the features of our premium plan as soon as possible.
+				</p>
+			</div>
 
 			<div className="SelectedPlan">
 				<img src={SmallPlanIcon} alt="Small Business" />
@@ -40,9 +42,7 @@ const Plan = () => {
 					<p>8890 xxxx xxxx 1234</p>
 					<input type="text" />
 				</div>
-
 				<a href="/">ADD PAYMENT METHOD</a>
-
 			</div>
 
 		</div>

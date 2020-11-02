@@ -40,3 +40,8 @@
          + 'Please make sure it is defined in `$breakpoints` map.';
   }
 }
+
+@mixin subText() {
+  color: #9198A2;
+  font-size: 1rem;
+}

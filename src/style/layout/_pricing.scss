@@ -1,0 +1,72 @@
+.Pricing {
+	background-color: white;
+	border-radius: 12px;
+	padding: 48px 38px;
+	max-width: 512px;
+
+	.Title {
+
+		h2 {
+			font-size: 1.4rem;
+		} // h2
+
+		p {
+			@include subText;
+		} // p
+
+	} // Title
+
+	.Type {
+		display: flex;
+		justify-content: space-between;
+
+	} // Type - (Hourly / Fixed)
+
+	.Amount {
+
+		.Display {
+			display: flex;
+			padding: 2rem 0rem 1.2rem 0rem;
+
+			h4 {
+				font-size: 1.8rem;
+				line-height: 1rem;
+				margin: 0.25rem;
+			} // h4
+
+			p {
+				@include subText;
+				font-size: 1.2rem;
+				line-height: 1rem;
+				margin: 0;
+
+			} // p
+
+			p:last-of-type {
+				line-height: 1.8rem;
+			}
+		} // Display
+
+		input {
+			width: 100%;
+
+		} // input - slider
+
+
+		.PricingLabels {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+
+			p {
+				margin: 0;
+				@include subText;
+			}
+
+		} // PricingLabels
+
+	} // Amount
+
+
+
+} // Pricing

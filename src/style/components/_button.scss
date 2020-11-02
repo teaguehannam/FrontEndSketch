@@ -1,14 +1,14 @@
-
 button {
-	color: rgba(252,252,252,0.8);
-	background-color: rgba(19,19,19,0.5);
-	box-shadow: 0px 0px 5px black;
-	transition: 0.3s;
-	max-width: 150px;
+	background-color: white;
+	height: 72px;
+	width: 204px;
+	color: #424447;
+	border-radius: 9px;
+	font-size: 1.2rem;
+	border: 1px #E4E8ED solid;
 
-	&:hover {
-		color: rgba(252,252,252,1);
-		background-color: rgba(19,19,19,0.8);
-
+	&:active {
+		border: 1px #6D8EFF solid;
+		background-color: #F2F5FF;
 	}
 }

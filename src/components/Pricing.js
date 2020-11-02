@@ -23,14 +23,18 @@ const Pricing = () => {
 			</div>
 			
 			<div className="Amount">
-				<h4>$180</h4><p>/ hour</p>
+				<div className="Display">
+					<p>$</p>
+					<h4>180</h4>
+					<p>/ hour</p>
+				</div>
 				<input	type="range"
 						id="pricing" 
 						name="pricing"
 						min="20" max="300" step="5"
 						onChange={handlePricing}
 						value={pricing.price}
-						 />
+				/>
 				<div className="PricingLabels">
 					<p>$20</p>
 					<p>$300</p>
