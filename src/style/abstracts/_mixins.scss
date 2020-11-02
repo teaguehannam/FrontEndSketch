@@ -45,3 +45,9 @@
   color: #9198A2;
   font-size: 1rem;
 }
+
+@mixin componentBG() {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0px 0px 12px 3px rgba(128,128,128,0.2);
+}

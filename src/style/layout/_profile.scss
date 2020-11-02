@@ -1,23 +1,25 @@
 .Profile {
 	padding: 6px 6px 52px 6px;
 	width: 100%;
-	max-width: 512px;
-	border-radius: 12px;
 	text-align: center;
-	background-color: white;
+	width: 512px;
+	@include componentBG;
 	
 	.DisplayUser {
 		display: flex;
+		max-width: 100%;
 
 		.Banner {
-			max-width: 500px;
-			max-height: 140px;
+			background: url('../../resources/UserBanner.jpg');
 			border-radius: 12px 12px 0px 0px;
-			width: calc(100% - 12px);
 			position: absolute;
+			height: 132px;
+			width: 100%;
+			max-width: 499px;
+			margin: 0px auto;
 		} // Banner
 
-		.Profile {
+		.ProfilePic {
 			height: 124px;
 			width: 124px;
 			padding: 0;
@@ -26,7 +28,7 @@
 			margin: 64px auto 0px auto;
 			z-index: 1;
 
-		} // Profile
+		} // ProfilePic
 
 	} // DisplayUser
 

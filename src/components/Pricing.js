@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 
+import Clock from '../resources/clock.svg';
+import Fixed from '../resources/fixed.svg';
+
 const Pricing = () => {
 
 	const [pricing, setPricing] = useState({price:180})
@@ -18,8 +21,8 @@ const Pricing = () => {
 			</div>
 
 			<div className="Type">
-				<button>Hourly</button>
-				<button>Fixed</button>
+				<button><img src={Clock} alt="Clock" /><p>Hourly</p></button>
+				<button><img src={Fixed} alt="Fixed" /><p>Fixed</p></button>
 			</div>
 			
 			<div className="Amount">

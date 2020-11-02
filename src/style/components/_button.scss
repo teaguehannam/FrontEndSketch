@@ -8,7 +8,11 @@ button {
 	border: 1px #E4E8ED solid;
 
 	&:active {
+	}
+
+	&:focus {
 		border: 1px #6D8EFF solid;
 		background-color: #F2F5FF;
+
 	}
 }

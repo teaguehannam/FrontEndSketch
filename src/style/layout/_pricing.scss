@@ -1,8 +1,7 @@
 .Pricing {
-	background-color: white;
-	border-radius: 12px;
-	padding: 48px 38px;
-	max-width: 512px;
+	padding: 16px 38px 32px 38px;
+	min-width: 430px;
+	@include componentBG;
 
 	.Title {
 
@@ -19,6 +18,25 @@
 	.Type {
 		display: flex;
 		justify-content: space-between;
+
+		button {
+			display: flex;
+			justify-content: space-around;
+
+			img {
+				width: 30%;
+				height: 100%;
+				padding: 14px;
+			} // img
+
+			p {
+				width: 100%;
+				text-align: left;
+				line-height: 2rem;
+
+			} // p
+		
+		} // button
 
 	} // Type - (Hourly / Fixed)
 

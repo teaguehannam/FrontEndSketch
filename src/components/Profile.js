@@ -1,6 +1,5 @@
 import React from 'react';
 
-import UserBanner from '../resources/UserBanner.jpg';
 import ProfilePic from '../resources/ProfilePic.jpg';
 
 const Profile = () => {
@@ -8,8 +7,8 @@ const Profile = () => {
 		<div className="Profile">
 
 			<div className="DisplayUser">
-				<img className="Banner" src={UserBanner} alt="User Banner" />
-				<img className="Profile" src={ProfilePic} alt="User Profile" />
+				<div className="Banner" />
+				<img className="ProfilePic" src={ProfilePic} alt="User Profile" />
 			</div>
 
 			<div className="UserInfo">
@@ -32,7 +31,6 @@ const Profile = () => {
 					<h5>129</h5>
 				</div>
 			</div>
-
 
 		</div>
 	);
