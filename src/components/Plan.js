@@ -17,7 +17,9 @@ const Plan = () => {
 			</div>
 
 			<div className="SelectedPlan">
-				<img src={SmallPlanIcon} alt="Small Business" />
+				<div className="ImgContainer">
+					<img src={SmallPlanIcon} alt="Small Business" />
+				</div>
 				<div className="Stack">
 					<h4>Small Business</h4>
 					<a href="/">CHANGE PLAN</a>
@@ -30,19 +32,36 @@ const Plan = () => {
 			</div>
 
 			<div className="PaymentDetails">
-				<div className="Card">
-					<img src={MasterCardIcon} alt="Mastercard" />
-					<h6>Credit Card</h6>
-					<p>2344 xxxx xxxx 8880</p>
-					<input type="text" />
+				<div className="Title">
+					<h3>Payment details</h3>
 				</div>
 				<div className="Card">
-					<img src={VenmoIcon} alt="Venmo Card" />
-					<h6>Credit Card</h6>
-					<p>8890 xxxx xxxx 1234</p>
-					<input type="text" />
+					<div className="ImgContainer">
+						<img src={MasterCardIcon} alt="Mastercard" />
+					</div>
+					<div className="Stack">
+						<h6>Credit Card</h6>
+						<p>2344 xxxx xxxx 8880</p>
+					</div>
+					<input type="text" maxLength="3" placeholder="CVC"/>
+				</div>
+				<div className="Card">
+					<div className="ImgContainer">
+						<img src={VenmoIcon} alt="Venmo Card" />
+					</div>
+					<div className="Stack">
+						<h6>Credit Card</h6>
+						<p>8890 xxxx xxxx 1234</p>
+					</div>
+					<input type="text" maxLength="3" placeholder="CVC"/>
 				</div>
 				<a href="/">ADD PAYMENT METHOD</a>
+			</div>
+
+			<input type="text" className="EmailInput" placeholder="Email address" />
+
+			<div className="SubmitButton">
+				<button>Proceed to payment →</button>
 			</div>
 
 		</div>

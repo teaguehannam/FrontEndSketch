@@ -1,0 +1,162 @@
+.Plan {
+	display: flex;
+	flex-direction: column;
+	padding: 64px 64px 52px 64px;
+	max-width: 800px;
+	background-color: white;
+	border-radius: 12px;
+
+	a {
+		font-size: 0.75rem;
+		color: #2B5AFF;
+	} // a
+
+	.Title {
+		max-width: 450px;
+
+		h2 {
+			color: #28292A;
+		} // h2
+
+		p {
+			@include subText;
+		}
+
+	} // Title
+
+	.SelectedPlan {
+		display: flex;
+		border: 2px #7291FF dashed;
+		height: 144px;
+		background-color: #F2F5FF;
+		border-radius: 3px;
+		min-width: 500px;
+
+		.ImgContainer {
+			width: 25%;
+
+			img{
+				border-radius: 12px;
+				margin: 25px;
+				height: 94px;
+				width: 94px;
+			}
+		} // img
+
+		.Stack {
+			width: 35%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+
+			h4 {
+				line-height: 100%;
+				margin: 0.5rem 0rem;
+
+			} // h4
+
+			
+
+		} // Stack
+
+		.Price {
+			width: 40%;
+			display: flex;
+			
+			h5 {
+				font-size: 3rem;
+				margin: 3rem 0.5rem;
+				line-height: 3rem;
+			} // h5
+
+			p{
+				@include subText;
+				font-size: 1.2rem;
+				margin: 0;
+				line-height: 8rem;
+			
+			} // p
+
+			p:last-of-type {
+				line-height: 10rem;
+				
+			}
+
+		} // Price
+
+	} // SelectedPlan
+
+	.PaymentDetails {
+
+
+		.Card {
+			width: 100%;
+			height: 72px;
+			display: flex;
+			justify-content: space-between;
+
+			.ImgContainer {
+
+				img {
+					padding: 4px 8px; 
+					height: 64px;
+					border-radius: 9px;
+
+				} // img
+			}
+
+			.Stack {
+
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+
+				h6 {
+					line-height: 38px;
+					margin: 0;
+					
+				} // h6
+
+				p {
+					@include subText;
+					font-size: 0.75rem;
+					line-height: 0;
+					margin: 0;
+
+				} // p
+
+			} // Stack
+
+		} // Card
+
+		input {
+			margin: 4px 0px;
+			width: 36px;
+			font-size: 0.8rem;
+			height: 2rem;
+
+		} // input - CVC
+
+	} // PaymentDetails
+
+	.EmailInput {
+		font-size: 1rem;
+		height: 52px;
+		padding: 12px;
+		margin-top: 36px;
+
+	} // EmailInput
+
+	.SubmitButton {
+		margin-top: 36px;
+		
+		button {
+			background-color: #2759FF;
+			color: #F5F7FF;
+			width: 100%;
+
+		}
+
+	}
+
+} // Plan
